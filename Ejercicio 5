@@ -1,0 +1,13 @@
+var texto = "hola todo bien";
+var i = 0;
+var palabras = 0;
+var caracteres = 0;
+while(i <= texto.length){
+    if(caracteres >= 3 && texto[i] == " "){
+        palabras++;
+        caracteres = 0;
+    }
+    i++;
+    caracteres++;
+}
+console.log(palabras);
