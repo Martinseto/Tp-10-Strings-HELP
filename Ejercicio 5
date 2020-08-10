@@ -11,3 +11,23 @@ while(i <= texto.length){
     caracteres++;
 }
 console.log(palabras);
+
+// Edit Posible Solucion
+
+let texto = "Maribel se durmio vamos a ver por que se hundio";
+let palabras = 0;
+let i = 0;
+let caracteres = 0;
+while(i < texto.length){
+    while(texto[i] == " "){
+        i++;
+    }
+    while(texto[i] != " " && i < texto.length){
+        i++; 
+        caracteres++;       
+    }
+    if(caracteres >= 3){
+    palabras++;}
+    caracteres = 0;
+}
+console.log(`La cantidad de palabras son:  ${palabras}`);
