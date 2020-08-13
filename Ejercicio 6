@@ -1,0 +1,14 @@
+let unTexto = "Por Para Paribel  por pe durmio vamos a cantarle por que pe pundio";
+let i = 0;
+let palabras = 0;
+let caracteres = 0;
+while(i < unTexto.length){
+    while(unTexto[i] == " "){
+        i++;
+    }
+    if(unTexto[i] == "p" || unTexto[i] == "P"){
+        palabras++;
+    }
+    i++;
+}
+console.log(palabras);
